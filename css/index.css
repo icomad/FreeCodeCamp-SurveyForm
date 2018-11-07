@@ -10,6 +10,7 @@ body{
   font-size: 1em;
   background: rgba(241, 196, 15,0.7);
   color: #454545;
+  overflow-x: hidden;
 }
 
 .header-container{
