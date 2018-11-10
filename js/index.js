@@ -18,6 +18,14 @@ const backToPresentation = document.getElementById('backToPresentation');
 const backToProfile = document.getElementById('backToProfile');
 const backToSelection = document.getElementById('backToSelection');
 
+for (const input of document.querySelectorAll('input:not(textarea):not([type=submit])')) {
+  input.addEventListener('keypress', function (evt) {
+    if (evt.keyCode == 13) {
+      evt.preventDefault();
+    }
+  })
+}
+
 goToProfile.addEventListener('click', function () {
   if (name.checkValidity()) {
     if (email.checkValidity()) {
